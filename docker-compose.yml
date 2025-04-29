@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  email-processor:
+    build: .
+    volumes:
+      - ./.env:/app/.env
+      - ./credentials.json:/app/credentials.json
+      - ./bigquery-credentials.json:/app/bigquery-credentials.json
+      - ./token.json:/app/token.json
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Tokyo
