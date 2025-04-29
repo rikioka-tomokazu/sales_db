@@ -1,0 +1,5 @@
+# Example crontab entry to run the email processor daily at 1:00 AM
+# To install: crontab -e and add the following line
+
+# Run daily at 1:00 AM
+0 1 * * * /full/path/to/gmail_to_bigquery/run_daily_job.sh >> /full/path/to/gmail_to_bigquery/cron.log 2>&1
