@@ -8,7 +8,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
 
 logging.basicConfig(
     level=logging.INFO,

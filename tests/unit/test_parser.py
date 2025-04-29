@@ -6,9 +6,9 @@ import sys
 import subprocess
 from pathlib import Path
 
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../src'))
 
-from email_parser import EmailParser
+from src.email_parser import EmailParser
 
 def convert_pdf_to_text(pdf_path):
     """Convert a PDF file to text using pdftotext."""

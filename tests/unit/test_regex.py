@@ -8,6 +8,8 @@ import subprocess
 import re
 from pathlib import Path
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
+
 def convert_pdf_to_text(pdf_path):
     """Convert a PDF file to text using pdftotext."""
     result = subprocess.run(['pdftotext', pdf_path, '-'], capture_output=True, text=True)
